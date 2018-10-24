@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!-- Set the page width to the size of the device and set zoom level to 1 -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Use the latest meta engine telling internet explorer to use the latest rendering engine-->
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	
+	<!-- Link to bootstrap's CDN -->
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	
+</head>
+<body>
+        <div class="row" style="border-bottom: 1px solid black">
+                <div class="navbar-header" >
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle Navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    </button>
+                    <div class="col-xs-12 phone-nav">
+                        <a class="navbar-brand" href="#" id="logo">Latitude</a>
+                    </div>
+            
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right navbar-right-custom">
+                        <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="visualizations/temp.html">Max Temperature</a></li>
+                            <li><a href="visualizations/humidity.html">Humidity</a></li>
+                            <li><a href="visualizations/cloudiness.html">Cloudiness</a></li>
+                            <li><a href="visualizations/wind.html">Wind Speed</a></li>
+                        </ul>
+                        </li>
+                    </ul>
+                </div>    
+        </div>
+
+<div class="container">
+
+<div class="page-header">
+    <h1>Bootstrap Homework</h1>
+</div>
+
+    <div class="jumbotron">
+        <h3 class="description-header">Summary: Latitude vs. X</h3>
+        <hr> 
+        <p>The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.
+        After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.</p>
+    </div>
+
+    <div class="jumbotron">
+        <h3 class="description-header"> Visualizations</h3>
+        <hr>
+        <ul>
+            <li><a href="visualizations/temp.html"><img src="assets/images/lat vs temp.png" height="100" width="100" Lat vs Temperature></a></li>
+            <li><a href="visualizations/humidity.html"><img src="assets/images/lat vs humidity.png" height="100" width="100" Lat vs humidity></a></li>
+            <li><a href="visualizations/cloudiness.html"><img src="assets/images/lat vs cloudiness.png" height="100" width="100" Lat vs cloudiness></a></li>
+            <li><a href="visualizations/wind.html"><img src="assets/images/lat vs windspeed.png" height="100" width="100" Lat vs windspeed></a></li>
+        </ul>
+    </div>
+
+</div>
+
+
+<!-- Link to jquery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Link to javascript to make bootstrap work  Bootstrap CDN -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+</body>
+</html>
